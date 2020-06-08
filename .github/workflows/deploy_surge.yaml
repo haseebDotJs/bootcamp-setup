@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploying website through surge
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -30,6 +30,6 @@ jobs:
     - name: Install Surge
       run: sudo npm install --globally surge
     - name: deploy website through surge
-      run: surge ./ http://bootcamp2020-haseeb.surge.sh/ --token ${{secrets.MY_SECRET_PIAIC}}
+      run: surge ./ bootcamp2020-haseeb.surge.sh --token ${{secrets.MY_SECRET_PIAIC}}
 
 
