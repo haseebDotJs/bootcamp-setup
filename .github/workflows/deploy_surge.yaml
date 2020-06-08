@@ -28,7 +28,7 @@ jobs:
       with:
         node-version: 12
     - name: Install Surge
-      run: sudo npm install --globally surge
+      run: npm install -g surge
     - name: deploy website through surge
       run: surge ./ bootcamp2020-haseeb.surge.sh --token ${{secrets.MY_SECRET_PIAIC}}
 
